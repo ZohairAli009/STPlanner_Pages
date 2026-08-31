@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Privacy Policy — Schedora</title>
+
+  <meta
+    name="description"
+    content="Privacy Policy for Schedora, a local-first teacher planner for flexible and non-standard school schedules."
+  />
+
+  <meta name="theme-color" content="#f5f7fb" />
+
+  <style>
+    :root {
+      --bg: #f5f7fb;
+      --surface: rgba(255, 255, 255, 0.88);
+      --surface-solid: #ffffff;
+      --text: #18202f;
+      --muted: #667085;
+      --border: #e6e9ef;
+      --accent: #5669d8;
+      --accent-dark: #4456c2;
+      --accent-soft: #eef0ff;
+      --warning-soft: #fff8e8;
+      --warning-border: #f1dca3;
+      --warning-text: #6f5516;
+      --shadow: 0 20px 60px rgba(35, 48, 80, 0.08);
+      --radius: 22px;
+      --content-width: 820px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        radial-gradient(
+          circle at 15% 0%,
+          rgba(86, 105, 216, 0.10),
+          transparent 30rem
+        ),
+        radial-gradient(
+          circle at 90% 20%,
+          rgba(112, 196, 180, 0.08),
+          transparent 25rem
+        ),
+        var(--bg);
+
+      color: var(--text);
+
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "SF Pro Text",
+        "SF Pro Display",
+        "Segoe UI",
+        sans-serif;
+
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a:hover {
+      color: var(--accent-dark);
+      text-decoration: underline;
+    }
+
+    .page {
+      width: min(calc(100% - 32px), var(--content-width));
+      margin: 0 auto;
+      padding: 64px 0 80px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 28px;
+      color: var(--text);
+      font-weight: 700;
+      font-size: 18px;
+      text-decoration: none;
+    }
+
+    .brand:hover {
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .brand-icon {
+      width: 38px;
+      height: 38px;
+      display: grid;
+      place-items: center;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #6275e8, #4e5fcb);
+      color: white;
+      box-shadow: 0 8px 24px rgba(86, 105, 216, 0.25);
+      font-size: 18px;
+    }
+
+    .hero {
+      padding: 44px;
+      margin-bottom: 24px;
+      border: 1px solid rgba(255, 255, 255, 0.8);
+      border-radius: 28px;
+      background:
+        linear-gradient(
+          145deg,
+          rgba(255, 255, 255, 0.98),
+          rgba(249, 250, 255, 0.92)
+        );
+      box-shadow: var(--shadow);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      padding: 7px 12px;
+      margin-bottom: 18px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent-dark);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(38px, 7vw, 58px);
+      line-height: 1.05;
+      letter-spacing: -0.04em;
+    }
+
+    .intro {
+      max-width: 640px;
+      margin: 18px 0 0;
+      color: var(--muted);
+      font-size: 18px;
+      line-height: 1.65;
+    }
+
+    .dates {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 22px;
+      margin-top: 28px;
+      padding-top: 22px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .dates strong {
+      color: var(--text);
+    }
+
+    .notice {
+      margin-bottom: 24px;
+      padding: 18px 20px;
+      border: 1px solid var(--warning-border);
+      border-radius: 16px;
+      background: var(--warning-soft);
+      color: var(--warning-text);
+      font-size: 14px;
+    }
+
+    .policy {
+      padding: 16px 44px 44px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--surface);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+    }
+
+    section {
+      padding: 34px 0;
+      border-bottom: 1px solid var(--border);
+      scroll-margin-top: 24px;
+    }
+
+    section:last-child {
+      border-bottom: 0;
+      padding-bottom: 6px;
+    }
+
+    h2 {
+      margin: 0 0 15px;
+      font-size: 23px;
+      line-height: 1.3;
+      letter-spacing: -0.02em;
+    }
+
+    p {
+      margin: 0 0 16px;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    ul {
+      margin: 12px 0 18px;
+      padding-left: 24px;
+    }
+
+    li {
+      margin: 7px 0;
+    }
+
+    .callout {
+      margin: 20px 0;
+      padding: 18px 20px;
+      border-left: 4px solid var(--accent);
+      border-radius: 6px 14px 14px 6px;
+      background: var(--accent-soft);
+    }
+
+    .contact {
+      padding: 22px;
+      border-radius: 18px;
+      background: var(--accent-soft);
+    }
+
+    .contact p {
+      margin: 0;
+    }
+
+    footer {
+      padding: 30px 10px 0;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    @media (max-width: 640px) {
+      .page {
+        width: min(calc(100% - 22px), var(--content-width));
+        padding: 28px 0 48px;
+      }
+
+      .brand {
+        margin-left: 4px;
+        margin-bottom: 18px;
+      }
+
+      .hero {
+        padding: 30px 24px;
+        border-radius: 22px;
+      }
+
+      .policy {
+        padding: 6px 24px 30px;
+        border-radius: 20px;
+      }
+
+      section {
+        padding: 28px 0;
+      }
+
+      .intro {
+        font-size: 16px;
+      }
+
+      h2 {
+        font-size: 21px;
+      }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #11131a;
+        --surface: rgba(25, 28, 38, 0.94);
+        --surface-solid: #191c26;
+        --text: #f3f4f8;
+        --muted: #a4a9b8;
+        --border: #2b2f3c;
+        --accent: #9ca8ff;
+        --accent-dark: #bac2ff;
+        --accent-soft: rgba(107, 123, 230, 0.14);
+        --warning-soft: rgba(207, 159, 47, 0.10);
+        --warning-border: rgba(220, 175, 73, 0.32);
+        --warning-text: #e5c978;
+        --shadow: 0 22px 60px rgba(0, 0, 0, 0.25);
+      }
+
+      body {
+        background:
+          radial-gradient(
+            circle at 15% 0%,
+            rgba(87, 104, 219, 0.16),
+            transparent 30rem
+          ),
+          radial-gradient(
+            circle at 90% 20%,
+            rgba(71, 152, 139, 0.08),
+            transparent 25rem
+          ),
+          var(--bg);
+      }
+
+      .hero {
+        border-color: var(--border);
+        background:
+          linear-gradient(
+            145deg,
+            rgba(28, 31, 43, 0.98),
+            rgba(21, 24, 33, 0.96)
+          );
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+
+    <a class="brand" href="#" aria-label="Schedora">
+      <span class="brand-icon">S</span>
+      <span>Schedora</span>
+    </a>
+
+    <header class="hero">
+      <div class="eyebrow">Legal</div>
+
+      <h1>Privacy Policy</h1>
+
+      <p class="intro">
+        This Privacy Policy explains how information is handled when you
+        download or use the Schedora application.
+      </p>
+
+      <div class="dates">
+        <span>
+          <strong>Effective date:</strong>
+          [MONTH DAY, YEAR]
+        </span>
+
+        <span>
+          <strong>Last updated:</strong>
+          [MONTH DAY, YEAR]
+        </span>
+      </div>
+    </header>
+
+    <!-- Remove this box after replacing all placeholders. -->
+    <div class="notice">
+      Before publishing, replace the date placeholders and
+      <strong>[PRIVACY EMAIL]</strong> with your real information.
+    </div>
+
+    <article class="policy">
+
+      <section id="summary">
+        <h2>1. Summary</h2>
+
+        <p>
+          Schedora is designed as a local-first teacher planner.
+        </p>
+
+        <p>
+          Your schedules, classes, date changes, lesson plans, notes, and
+          tasks are stored on your device. Schedora does not require an
+          account and does not operate a cloud service for your planner
+          content.
+        </p>
+
+        <p>
+          Subscription-related information is processed by Apple and
+          RevenueCat so that Schedora can offer, verify, and restore
+          Schedora Pro purchases.
+        </p>
+      </section>
+
+      <section id="device-information">
+        <h2>2. Information Stored on Your Device</h2>
+
+        <p>
+          Schedora stores the information you enter locally on your device,
+          including:
+        </p>
+
+        <ul>
+          <li>School-year dates and setup status.</li>
+          <li>Schedule type and recurring schedule rules.</li>
+          <li>Schedule days, rotations, and weekday mappings.</li>
+          <li>Class names, times, rooms, and ordering.</li>
+          <li>Date-specific schedule changes and no-school days.</li>
+          <li>Changes or cancellations affecting individual class occurrences.</li>
+          <li>Lesson titles, notes, tasks, dates, and class associations.</li>
+          <li>Preferences such as appearance, week-start day, and time format.</li>
+        </ul>
+
+        <p>
+          This information is used to provide the planner's features and allow
+          daily scheduling to work offline.
+        </p>
+
+        <p>
+          We do not receive or have access to this locally stored planner
+          content unless you deliberately send it to us, such as when
+          requesting support.
+        </p>
+      </section>
+
+      <section id="evaluation">
+        <h2>3. Evaluation Information</h2>
+
+        <p>
+          Schedora may store information relating to its full-access evaluation
+          in the device Keychain, including:
+        </p>
+
+        <ul>
+          <li>Evaluation eligibility.</li>
+          <li>Evaluation start and expiration dates.</li>
+          <li>Reminder state.</li>
+          <li>Previously observed dates.</li>
+          <li>
+            Time-zone information needed to apply the evaluation consistently.
+          </li>
+        </ul>
+
+        <p>
+          This information is stored locally. Keychain information may remain
+          after you reset planner data or uninstall and reinstall the app,
+          depending on how iOS manages the Keychain.
+        </p>
+      </section>
+
+      <section id="subscriptions">
+        <h2>4. Subscriptions and Purchase Information</h2>
+
+        <p>Schedora uses RevenueCat to:</p>
+
+        <ul>
+          <li>Display available subscription offerings.</li>
+          <li>Start and restore purchases.</li>
+          <li>Verify subscription status.</li>
+          <li>Determine whether Schedora Pro features are available.</li>
+        </ul>
+
+        <p>
+          Schedora does not create an account for this purpose. RevenueCat
+          generates a random anonymous app-user identifier when the SDK is
+          configured without a custom user ID.
+        </p>
+
+        <p>
+          RevenueCat may process subscription purchase history, App Store
+          receipts, entitlement status, last-seen activity, and limited
+          technical information such as device type, operating system,
+          IP-derived information, and the anonymous identifier. Apple processes
+          App Store payments, billing information, cancellations, and refunds.
+        </p>
+
+        <p>
+          We use this information only to operate subscriptions, prevent
+          purchase fraud, provide access to paid functionality, and understand
+          subscription performance. We do not use it for third-party
+          advertising or cross-app tracking.
+        </p>
+
+        <p>
+          RevenueCat documents that its SDK collects purchase history for app
+          functionality and subscription analytics.
+          <a
+            href="https://www.revenuecat.com/docs/platform-resources/apple-platform-resources/apple-app-privacy"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            RevenueCat App Privacy guidance
+          </a>,
+          <a
+            href="https://www.revenuecat.com/privacy-policy"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            RevenueCat Privacy Policy
+          </a>.
+        </p>
+      </section>
+
+      <section id="not-collected">
+        <h2>5. Information We Do Not Collect</h2>
+
+        <p>Schedora does not:</p>
+
+        <ul>
+          <li>Sell or rent your planner content.</li>
+
+          <li>
+            Upload your schedules, lessons, notes, or preferences to a Schedora
+            cloud account.
+          </li>
+
+          <li>Use planner content for advertising.</li>
+          <li>Include third-party advertising.</li>
+          <li>Use an advertising identifier for cross-app tracking.</li>
+
+          <li>
+            Include a general-purpose behavioral analytics or advertising SDK.
+          </li>
+
+          <li>
+            Request access to contacts, photos, precise location, health data,
+            or student-information systems as part of its normal planner
+            functionality.
+          </li>
+        </ul>
+
+        <p>
+          Subscription purchase information may still be processed by Apple and
+          RevenueCat as described above.
+        </p>
+      </section>
+
+      <section id="exports">
+        <h2>6. Exports and Sharing</h2>
+
+        <p>
+          When you select <strong>Export Personal Data</strong>, Schedora
+          creates a readable JSON copy of your planner information on your
+          device and presents the iOS share sheet.
+        </p>
+
+        <p>
+          The export is created only when you request it. Once you save or share
+          the file, the destination you select receives a copy. That destination
+          may have its own privacy and retention practices.
+        </p>
+
+        <p>
+          You are responsible for protecting and deleting exported files. A
+          personal-data export is provided for readability and portability; it
+          is not a restorable Schedora backup.
+        </p>
+      </section>
+
+      <section id="support">
+        <h2>7. Support Communications</h2>
+
+        <p>
+          If you contact us, we may receive your email address, the contents of
+          your message, app version information you provide, and any attachments
+          you choose to send.
+        </p>
+
+        <div class="callout">
+          Please do not include student records, grades, health information, or
+          sensitive lesson content unless it is strictly necessary to resolve
+          your support request.
+        </div>
+
+        <p>
+          We use support communications only to respond to you, diagnose the
+          reported issue, protect the app, and maintain appropriate business
+          records.
+        </p>
+      </section>
+
+      <section id="retention">
+        <h2>8. Retention and Deletion</h2>
+
+        <p>
+          Planner information remains on your device until you edit it, reset
+          the app's local data, or remove it through applicable
+          device-management features.
+        </p>
+
+        <p>
+          Using <strong>Reset All Local Data</strong> removes the school year,
+          schedule, recurring classes, date changes, class overrides, lessons,
+          and saved preferences from Schedora after confirmation.
+        </p>
+
+        <p>Resetting planner data:</p>
+
+        <ul>
+          <li>
+            Does not necessarily remove evaluation information stored in the
+            iOS Keychain.
+          </li>
+
+          <li>Does not cancel an active App Store subscription.</li>
+
+          <li>
+            Does not delete purchase records maintained by Apple.
+          </li>
+
+          <li>
+            Does not automatically delete records processed by RevenueCat.
+          </li>
+        </ul>
+
+        <p>
+          To request assistance with subscription-related personal information,
+          contact us at
+          <a href="mailto:[PRIVACY EMAIL]">[PRIVACY EMAIL]</a>.
+          Apple and RevenueCat may require separate requests for information
+          they control.
+        </p>
+      </section>
+
+      <section id="security">
+        <h2>9. Security</h2>
+
+        <p>
+          Schedora relies on Apple's platform protections and local device
+          storage. However, no storage system is completely secure.
+        </p>
+
+        <p>
+          You should protect your device with a passcode, keep iOS updated, and
+          safeguard any exported planner files.
+        </p>
+
+        <div class="callout">
+          <strong>Important:</strong> Schedora is a planning tool, not a student
+          information system. Do not store student records, grades, medical
+          information, safeguarding information, or other sensitive personal
+          data in lesson notes or tasks.
+        </div>
+      </section>
+
+      <section id="children">
+        <h2>10. Children's Privacy</h2>
+
+        <p>
+          Schedora is designed for teachers and other adult educators. It is not
+          directed to children, and Schedora does not knowingly collect
+          children's personal information through an account or planner cloud
+          service.
+        </p>
+
+        <p>
+          If you believe a child has provided personal information to us through
+          a support communication, contact us so we can review and delete it
+          where appropriate.
+        </p>
+      </section>
+
+      <section id="international">
+        <h2>11. International Processing</h2>
+
+        <p>
+          Apple and RevenueCat may process subscription-related information in
+          countries other than the country where you live. Their handling of
+          that information is governed by their respective policies and
+          applicable agreements.
+        </p>
+      </section>
+
+      <section id="changes">
+        <h2>12. Changes to This Policy</h2>
+
+        <p>
+          We may update this Privacy Policy when Schedora's features, service
+          providers, or data practices change.
+        </p>
+
+        <p>
+          When we make a material change, we will update the "Last updated" date
+          and provide any additional notice required by applicable law.
+        </p>
+      </section>
+
+      <section id="contact">
+        <h2>13. Contact Us</h2>
+
+        <p>
+          For privacy questions or requests:
+        </p>
+
+        <div class="contact">
+          <p>
+            <strong>Email:</strong>
+            <a href="mailto:[PRIVACY EMAIL]">[PRIVACY EMAIL]</a>
+          </p>
+        </div>
+      </section>
+
+    </article>
+
+    <footer>
+      &copy; <span id="year"></span> Schedora. All rights reserved.
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
