@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Support — Schedora</title>
+
+  <meta
+    name="description"
+    content="Get help with Schedora, including schedules, subscriptions, purchases, data exports, privacy, and troubleshooting."
+  />
+
+  <meta name="theme-color" content="#f5f7fb" />
+
+  <style>
+    :root {
+      --bg: #f5f7fb;
+      --surface: rgba(255, 255, 255, 0.9);
+      --text: #18202f;
+      --muted: #667085;
+      --border: #e6e9ef;
+
+      --accent: #5669d8;
+      --accent-dark: #4456c2;
+      --accent-soft: #eef0ff;
+
+      --success-soft: #edf9f4;
+      --success-border: #ccebdd;
+      --success-text: #326f59;
+
+      --shadow: 0 20px 60px rgba(35, 48, 80, 0.08);
+
+      --radius: 22px;
+      --content-width: 820px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+
+      background:
+        radial-gradient(
+          circle at 15% 0%,
+          rgba(86, 105, 216, 0.10),
+          transparent 30rem
+        ),
+        radial-gradient(
+          circle at 90% 20%,
+          rgba(112, 196, 180, 0.08),
+          transparent 25rem
+        ),
+        var(--bg);
+
+      color: var(--text);
+
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "SF Pro Text",
+        "SF Pro Display",
+        "Segoe UI",
+        sans-serif;
+
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a:hover {
+      color: var(--accent-dark);
+      text-decoration: underline;
+    }
+
+    .page {
+      width: min(calc(100% - 32px), var(--content-width));
+      margin: 0 auto;
+      padding: 64px 0 80px;
+    }
+
+    /* Brand */
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+
+      margin-bottom: 28px;
+
+      color: var(--text);
+
+      font-size: 18px;
+      font-weight: 700;
+
+      text-decoration: none;
+    }
+
+    .brand:hover {
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .brand-icon {
+      width: 38px;
+      height: 38px;
+
+      display: grid;
+      place-items: center;
+
+      border-radius: 12px;
+
+      background:
+        linear-gradient(
+          135deg,
+          #6275e8,
+          #4e5fcb
+        );
+
+      color: white;
+
+      box-shadow:
+        0 8px 24px rgba(86, 105, 216, 0.25);
+
+      font-size: 18px;
+    }
+
+    /* Hero */
+
+    .hero {
+      padding: 44px;
+      margin-bottom: 24px;
+
+      border: 1px solid rgba(255, 255, 255, 0.8);
+      border-radius: 28px;
+
+      background:
+        linear-gradient(
+          145deg,
+          rgba(255, 255, 255, 0.98),
+          rgba(249, 250, 255, 0.92)
+        );
+
+      box-shadow: var(--shadow);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+
+      padding: 7px 12px;
+      margin-bottom: 18px;
+
+      border-radius: 999px;
+
+      background: var(--accent-soft);
+      color: var(--accent-dark);
+
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    h1 {
+      margin: 0;
+
+      font-size: clamp(38px, 7vw, 58px);
+      line-height: 1.05;
+
+      letter-spacing: -0.04em;
+    }
+
+    .hero-text {
+      max-width: 650px;
+
+      margin: 18px 0 0;
+
+      color: var(--muted);
+
+      font-size: 18px;
+      line-height: 1.65;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+
+      margin-top: 28px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      min-height: 46px;
+      padding: 0 18px;
+
+      border-radius: 13px;
+
+      background: var(--accent);
+      color: white;
+
+      font-size: 15px;
+      font-weight: 700;
+
+      text-decoration: none;
+
+      box-shadow:
+        0 8px 22px rgba(86, 105, 216, 0.22);
+
+      transition:
+        transform 0.15s ease,
+        background 0.15s ease;
+    }
+
+    .button:hover {
+      background: var(--accent-dark);
+      color: white;
+
+      text-decoration: none;
+      transform: translateY(-1px);
+    }
+
+    .button.secondary {
+      border: 1px solid var(--border);
+
+      background: transparent;
+      color: var(--text);
+
+      box-shadow: none;
+    }
+
+    .button.secondary:hover {
+      background: var(--accent-soft);
+      color: var(--accent-dark);
+    }
+
+    /* Content */
+
+    .support-card {
+      padding: 16px 44px 44px;
+
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+
+      background: var(--surface);
+
+      box-shadow: var(--shadow);
+
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+    }
+
+    section {
+      padding: 34px 0;
+
+      border-bottom: 1px solid var(--border);
+
+      scroll-margin-top: 24px;
+    }
+
+    section:last-child {
+      border-bottom: 0;
+      padding-bottom: 6px;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+
+      font-size: 23px;
+      line-height: 1.3;
+
+      letter-spacing: -0.02em;
+    }
+
+    p {
+      margin: 0 0 16px;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    ul {
+      margin: 12px 0 18px;
+      padding-left: 24px;
+    }
+
+    li {
+      margin: 7px 0;
+    }
+
+    /* FAQ */
+
+    .faq {
+      display: grid;
+      gap: 12px;
+
+      margin-top: 20px;
+    }
+
+    details {
+      border: 1px solid var(--border);
+      border-radius: 15px;
+
+      background: rgba(255, 255, 255, 0.45);
+
+      overflow: hidden;
+    }
+
+    summary {
+      padding: 17px 18px;
+
+      cursor: pointer;
+
+      font-weight: 700;
+
+      list-style: none;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    summary::after {
+      content: "+";
+
+      float: right;
+
+      color: var(--accent);
+
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    details[open] summary::after {
+      content: "−";
+    }
+
+    .faq-answer {
+      padding: 0 18px 18px;
+
+      color: var(--muted);
+    }
+
+    .faq-answer p {
+      margin-bottom: 10px;
+    }
+
+    /* Callouts */
+
+    .callout {
+      margin: 20px 0;
+
+      padding: 18px 20px;
+
+      border-left: 4px solid var(--accent);
+      border-radius: 6px 14px 14px 6px;
+
+      background: var(--accent-soft);
+    }
+
+    .tip {
+      margin-top: 20px;
+
+      padding: 18px 20px;
+
+      border: 1px solid var(--success-border);
+      border-radius: 15px;
+
+      background: var(--success-soft);
+      color: var(--success-text);
+    }
+
+    /* Contact */
+
+    .contact {
+      margin-top: 20px;
+      padding: 24px;
+
+      border-radius: 18px;
+
+      background: var(--accent-soft);
+    }
+
+    .contact h3 {
+      margin: 0 0 8px;
+
+      font-size: 18px;
+    }
+
+    .contact p {
+      margin: 0 0 14px;
+    }
+
+    .contact p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Footer */
+
+    footer {
+      padding: 30px 10px 0;
+
+      text-align: center;
+
+      color: var(--muted);
+
+      font-size: 13px;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 8px 18px;
+
+      margin-bottom: 8px;
+    }
+
+    /* Mobile */
+
+    @media (max-width: 640px) {
+
+      .page {
+        width: min(calc(100% - 22px), var(--content-width));
+
+        padding: 28px 0 48px;
+      }
+
+      .brand {
+        margin-left: 4px;
+        margin-bottom: 18px;
+      }
+
+      .hero {
+        padding: 30px 24px;
+
+        border-radius: 22px;
+      }
+
+      .support-card {
+        padding: 6px 24px 30px;
+
+        border-radius: 20px;
+      }
+
+      section {
+        padding: 28px 0;
+      }
+
+      h2 {
+        font-size: 21px;
+      }
+
+      .hero-text {
+        font-size: 16px;
+      }
+
+      .hero-actions {
+        flex-direction: column;
+      }
+
+      .button {
+        width: 100%;
+      }
+    }
+
+    /* Dark Mode */
+
+    @media (prefers-color-scheme: dark) {
+
+      :root {
+        --bg: #11131a;
+
+        --surface: rgba(25, 28, 38, 0.94);
+
+        --text: #f3f4f8;
+        --muted: #a4a9b8;
+
+        --border: #2b2f3c;
+
+        --accent: #9ca8ff;
+        --accent-dark: #bac2ff;
+        --accent-soft: rgba(107, 123, 230, 0.14);
+
+        --success-soft: rgba(64, 162, 127, 0.10);
+        --success-border: rgba(91, 185, 149, 0.25);
+        --success-text: #9dd8bf;
+
+        --shadow:
+          0 22px 60px rgba(0, 0, 0, 0.25);
+      }
+
+      body {
+        background:
+          radial-gradient(
+            circle at 15% 0%,
+            rgba(87, 104, 219, 0.16),
+            transparent 30rem
+          ),
+          radial-gradient(
+            circle at 90% 20%,
+            rgba(71, 152, 139, 0.08),
+            transparent 25rem
+          ),
+          var(--bg);
+      }
+
+      .hero {
+        border-color: var(--border);
+
+        background:
+          linear-gradient(
+            145deg,
+            rgba(28, 31, 43, 0.98),
+            rgba(21, 24, 33, 0.96)
+          );
+      }
+
+      details {
+        background: rgba(255, 255, 255, 0.015);
+      }
+    }
+  </style>
+</head>
+
+
+<body>
+
+  <main class="page">
+
+    <!-- Brand -->
+
+    <a class="brand" href="/" aria-label="Schedora">
+      <span class="brand-icon">S</span>
+      <span>Schedora</span>
+    </a>
+
+
+    <!-- Hero -->
+
+    <header class="hero">
+
+      <div class="eyebrow">
+        Help & Support
+      </div>
+
+      <h1>How can we help?</h1>
+
+      <p class="hero-text">
+        Find answers to common questions about schedules, subscriptions,
+        data, and using Schedora. If you still need help, you can contact
+        us directly.
+      </p>
+
+      <div class="hero-actions">
+
+        <a
+          class="button"
+          href="mailto:[SUPPORT EMAIL]"
+        >
+          Contact Support
+        </a>
+
+        <a
+          class="button secondary"
+          href="#faq"
+        >
+          View FAQs
+        </a>
+
+      </div>
+
+    </header>
+
+
+    <article class="support-card">
+
+
+      <!-- Getting Started -->
+
+      <section>
+
+        <h2>Getting Started</h2>
+
+        <p>
+          Schedora is a teacher planner designed for schedules that do not
+          fit neatly into a standard weekly calendar.
+        </p>
+
+        <p>
+          You can create weekly, A/B, rotating, or custom schedule days,
+          add your classes, and then make date-specific changes without
+          changing your normal recurring schedule.
+        </p>
+
+        <div class="tip">
+          <strong>Tip:</strong>
+          Build your recurring schedule first. Use date changes for assemblies,
+          testing days, holidays, delayed starts, or other exceptions.
+        </div>
+
+      </section>
+
+
+      <!-- FAQ -->
+
+      <section id="faq">
+
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq">
+
+
+          <details>
+
+            <summary>
+              How does Schedora handle A/B or rotating schedules?
+            </summary>
+
+            <div class="faq-answer">
+
+              <p>
+                Schedora lets you create reusable schedule days and define
+                how those days repeat throughout your school year.
+              </p>
+
+              <p>
+                If one particular date follows a different schedule,
+                you can change that date without rebuilding your normal
+                schedule.
+              </p>
+
+            </div>
+
+          </details>
+
+
+          <details>
+
+            <summary>
+              Can I change only one school day?
+            </summary>
+
+            <div class="faq-answer">
+
+              <p>
+                Yes. Date-specific schedule changes are designed for situations
+                such as assemblies, testing days, delayed starts, special
+                schedules, and no-school days.
+              </p>
+
+              <p>
+                Changing one date does not change your underlying recurring
+                schedule.
+              </p>
+
+            </div>
+
+          </details>
+
+
+          <details>
+
+            <summary>
+              Can I change a single class without changing my schedule?
+            </summary>
+
+            <div class="faq-answer">
+
+              <p>
+                Yes. Schedora supports changes to individual class occurrences,
+                including changes that apply only to a particular date.
+              </p>
+
+            </div>
+
+          </details>
+
+
+          <details>
+
+            <summary>
+              Where is my planner data stored?
+            </summary>
+
+            <div class="faq-answer">
+
+              <p>
+                Schedora is designed as a local-first app. Your schedules,
+                classes, lessons, notes, tasks, date changes, and preferences
+                are stored on your device.
+              </p>
+
+              <p>
+                Schedora does not require a Schedora account or upload your
+                planner content to a Schedora cloud account.
+              </p>
+
+            </div>
+
+          </details>
+
+
+          <details>
+
+            <summary>
+              Does Schedora work without an internet connection?
+            </summary>
+
+            <div class="faq-answer">
+
+              <p>
+                Core local planning features are designed to work offline.
+              </p>
+
+              <p>
+                An internet connection may still be required for subscription
+                purchases, restoring purchases, subscription verification,
+                and services provided by Apple or RevenueCat.
+              </p>
+
+            </div>
+
+          </details>
+
+
+          <details>
+
+            <summary>
+              How do I export my data?
+            </summary>
+
+            <div class="faq-answer">
+
+              <p>
+                Use <strong>Export Personal Data</strong> inside Schedora.
+              </p>
+
+              <p>
+                The app creates a readable JSON file containing your planner
+                information and presents the iOS share sheet so you can choose
+                where to save or send it.
+              </p>
+
+              <p>
+                The exported JSON file is intended for readability and
+                portability. It is not currently a restorable Schedora backup.
+              </p>
+
+            </div>
+
+          </details>
+
+
+          <details>
+
+            <summary>
+              What happens if I reset all local data?
+            </summary>
+
+            <div class="faq-answer">
+
+              <p>
+                Resetting local data removes your school year, schedules,
+                recurring classes, date changes, class overrides, lessons,
+                and saved planner preferences after confirmation.
+              </p>
+
+              <p>
+                Resetting local data does not cancel an active App Store
+                subscription.
+              </p>
+
+              <p>
+                Some evaluation information stored in the iOS Keychain may
+                also remain after a reset or reinstall.
+              </p>
+
+            </div>
+
+          </details>
+
+
+          <details>
+
+            <summary>
+              Will deleting Schedora cancel my subscription?
+            </summary>
+
+            <div class="faq-answer">
+
+              <p>
+                No. Deleting the app or resetting its local data does not
+                cancel an App Store subscription.
+              </p>
+
+              <p>
+                Subscriptions must be managed through your Apple account's
+                subscription settings.
+              </p>
+
+            </div>
+
+          </details>
+
+
+          <details>
+
+            <summary>
+              How do I cancel my Schedora Pro subscription?
+            </summary>
+
+            <div class="faq-answer">
+
+              <p>
+                Schedora Pro subscriptions are managed through Apple.
+              </p>
+
+              <p>
+                On iPhone or iPad, open:
+              </p>
+
+              <p>
+                <strong>
+                  Settings → Your Name → Subscriptions → Schedora
+                </strong>
+              </p>
+
+              <p>
+                From there, you can view or cancel your subscription
+                according to Apple's available options.
+              </p>
+
+            </div>
+
+          </details>
+
+
+          <details>
+
+            <summary>
+              How do I restore my Schedora Pro purchase?
+            </summary>
+
+            <div class="faq-answer">
+
+              <p>
+                Open Schedora and select
+                <strong>Restore Purchases</strong>.
+              </p>
+
+              <p>
+                Schedora will ask Apple and RevenueCat to refresh the
+                available purchase and entitlement information.
+              </p>
+
+              <p>
+                Make sure you are signed in with the Apple ID associated
+                with the original purchase.
+              </p>
+
+            </div>
+
+          </details>
+
+
+          <details>
+
+            <summary>
+              I paid for Pro, but the app still shows limited access.
+            </summary>
+
+            <div class="faq-answer">
+
+              <p>
+                First, make sure your device has an internet connection.
+              </p>
+
+              <p>
+                Then use <strong>Restore Purchases</strong> inside Schedora.
+              </p>
+
+              <p>
+                If access is still not restored, contact support and include
+                the app version and a brief description of what you are seeing.
+              </p>
+
+              <p>
+                Please do not send payment-card information or other sensitive
+                financial information.
+              </p>
+
+            </div>
+
+          </details>
+
+
+          <details>
+
+            <summary>
+              How does the 30-day evaluation work?
+            </summary>
+
+            <div class="faq-answer">
+
+              <p>
+                Eligible users may receive a 30-day period of full access.
+              </p>
+
+              <p>
+                This evaluation is provided by Schedora and is separate from
+                an App Store introductory subscription offer unless the app
+                specifically states otherwise.
+              </p>
+
+              <p>
+                Evaluation eligibility and dates may be stored in the device
+                Keychain and may not reset when planner data is deleted or
+                the app is reinstalled.
+              </p>
+
+            </div>
+
+          </details>
+
+
+          <details>
+
+            <summary>
+              What happens when my evaluation or Pro access ends?
+            </summary>
+
+            <div class="faq-answer">
+
+              <p>
+                Schedora may limit creation and editing when full access ends.
+              </p>
+
+              <p>
+                Existing planner information may remain available in
+                read-only mode so you can continue viewing your data.
+              </p>
+
+            </div>
+
+          </details>
+
+
+          <details>
+
+            <summary>
+              Can Schedora recover deleted planner data?
+            </summary>
+
+            <div class="faq-answer">
+
+              <p>
+                Because Schedora stores planner information locally and does
+                not operate a Schedora cloud account for your planner content,
+                we generally cannot recover planner data that has been
+                permanently deleted from your device.
+              </p>
+
+              <p>
+                Keep exports or other copies of information you cannot afford
+                to lose.
+              </p>
+
+            </div>
+
+          </details>
+
+
+          <details>
+
+            <summary>
+              Should I store student information in Schedora?
+            </summary>
+
+            <div class="faq-answer">
+
+              <p>
+                Schedora is a personal planning tool, not a student information
+                system.
+              </p>
+
+              <p>
+                Avoid storing student records, grades, medical information,
+                safeguarding information, or other sensitive personal
+                information in lesson notes or tasks.
+              </p>
+
+            </div>
+
+          </details>
+
+
+        </div>
+
+      </section>
+
+
+      <!-- Troubleshooting -->
+
+      <section>
+
+        <h2>Troubleshooting</h2>
+
+        <p>
+          If something in Schedora is not working as expected, try these
+          basic steps before contacting support:
+        </p>
+
+        <ul>
+          <li>Make sure you are using the latest available version of Schedora.</li>
+          <li>Make sure iOS is up to date.</li>
+          <li>Close and reopen the app.</li>
+          <li>Restart your device if the issue continues.</li>
+
+          <li>
+            Check your internet connection if the problem involves
+            purchases or subscription verification.
+          </li>
+
+          <li>
+            Use <strong>Restore Purchases</strong> if Pro access is not
+            being recognized.
+          </li>
+        </ul>
+
+        <div class="callout">
+          Avoid using <strong>Reset All Local Data</strong> as a general
+          troubleshooting step. It permanently removes planner information
+          stored by Schedora on your device.
+        </div>
+
+      </section>
+
+
+      <!-- Contact -->
+
+      <section id="contact">
+
+        <h2>Contact Support</h2>
+
+        <p>
+          If you couldn't find the answer above, contact us and we'll
+          review the issue.
+        </p>
+
+        <div class="contact">
+
+          <h3>Email Support</h3>
+
+          <p>
+            <a href="mailto:[SUPPORT EMAIL]">
+              [SUPPORT EMAIL]
+            </a>
+          </p>
+
+          <p>
+            When reporting a technical problem, it helps to include:
+          </p>
+
+          <ul>
+            <li>Your Schedora app version.</li>
+            <li>Your iOS version.</li>
+            <li>Your device model.</li>
+            <li>A short description of what happened.</li>
+            <li>The steps that caused the problem, if known.</li>
+          </ul>
+
+        </div>
+
+        <div class="callout">
+          <strong>Please don't send sensitive student information.</strong>
+          Do not include student records, grades, medical information,
+          passwords, payment-card details, or other unnecessary sensitive
+          information in a support request.
+        </div>
+
+      </section>
+
+
+      <!-- Privacy -->
+
+      <section>
+
+        <h2>Privacy & Legal</h2>
+
+        <p>
+          For more information about how Schedora handles information,
+          subscriptions, and your use of the app, review our legal pages.
+        </p>
+
+        <ul>
+          <li>
+            <a href="../privacy/">
+              Privacy Policy
+            </a>
+          </li>
+
+          <li>
+            <a href="../terms/">
+              Terms of Use
+            </a>
+          </li>
+        </ul>
+
+      </section>
+
+
+    </article>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+      <div class="footer-links">
+
+        <a href="../privacy/">
+          Privacy Policy
+        </a>
+
+        <a href="../terms/">
+          Terms of Use
+        </a>
+
+        <a href="mailto:[SUPPORT EMAIL]">
+          Contact
+        </a>
+
+      </div>
+
+      <div>
+        &copy;
+        <span id="year"></span>
+        Schedora. All rights reserved.
+      </div>
+
+    </footer>
+
+  </main>
+
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+
+</body>
+</html>
