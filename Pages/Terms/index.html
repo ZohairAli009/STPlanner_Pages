@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Terms of Use — Schedora</title>
+
+  <meta
+    name="description"
+    content="Terms of Use for Schedora, a local-first teacher planner for flexible and non-standard school schedules."
+  />
+
+  <meta name="theme-color" content="#f5f7fb" />
+
+  <style>
+    :root {
+      --bg: #f5f7fb;
+      --surface: rgba(255, 255, 255, 0.88);
+      --text: #18202f;
+      --muted: #667085;
+      --border: #e6e9ef;
+
+      --accent: #5669d8;
+      --accent-dark: #4456c2;
+      --accent-soft: #eef0ff;
+
+      --warning-soft: #fff8e8;
+      --warning-border: #f1dca3;
+      --warning-text: #6f5516;
+
+      --shadow: 0 20px 60px rgba(35, 48, 80, 0.08);
+
+      --radius: 22px;
+      --content-width: 820px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+
+      background:
+        radial-gradient(
+          circle at 15% 0%,
+          rgba(86, 105, 216, 0.10),
+          transparent 30rem
+        ),
+        radial-gradient(
+          circle at 90% 20%,
+          rgba(112, 196, 180, 0.08),
+          transparent 25rem
+        ),
+        var(--bg);
+
+      color: var(--text);
+
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "SF Pro Text",
+        "SF Pro Display",
+        "Segoe UI",
+        sans-serif;
+
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a:hover {
+      color: var(--accent-dark);
+      text-decoration: underline;
+    }
+
+    .page {
+      width: min(calc(100% - 32px), var(--content-width));
+      margin: 0 auto;
+      padding: 64px 0 80px;
+    }
+
+    /* Brand */
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 28px;
+
+      color: var(--text);
+      font-size: 18px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .brand:hover {
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .brand-icon {
+      width: 38px;
+      height: 38px;
+
+      display: grid;
+      place-items: center;
+
+      border-radius: 12px;
+
+      background:
+        linear-gradient(
+          135deg,
+          #6275e8,
+          #4e5fcb
+        );
+
+      color: #ffffff;
+
+      box-shadow:
+        0 8px 24px rgba(86, 105, 216, 0.25);
+
+      font-size: 18px;
+    }
+
+    /* Hero */
+
+    .hero {
+      padding: 44px;
+      margin-bottom: 24px;
+
+      border: 1px solid rgba(255, 255, 255, 0.8);
+      border-radius: 28px;
+
+      background:
+        linear-gradient(
+          145deg,
+          rgba(255, 255, 255, 0.98),
+          rgba(249, 250, 255, 0.92)
+        );
+
+      box-shadow: var(--shadow);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+
+      padding: 7px 12px;
+      margin-bottom: 18px;
+
+      border-radius: 999px;
+
+      background: var(--accent-soft);
+      color: var(--accent-dark);
+
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    h1 {
+      margin: 0;
+
+      font-size: clamp(38px, 7vw, 58px);
+      line-height: 1.05;
+
+      letter-spacing: -0.04em;
+    }
+
+    .intro {
+      max-width: 650px;
+
+      margin: 18px 0 0;
+
+      color: var(--muted);
+
+      font-size: 18px;
+      line-height: 1.65;
+    }
+
+    .dates {
+      display: flex;
+      flex-wrap: wrap;
+
+      gap: 10px 22px;
+
+      margin-top: 28px;
+      padding-top: 22px;
+
+      border-top: 1px solid var(--border);
+
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .dates strong {
+      color: var(--text);
+    }
+
+    /* Placeholder warning */
+
+    .notice {
+      margin-bottom: 24px;
+
+      padding: 18px 20px;
+
+      border: 1px solid var(--warning-border);
+      border-radius: 16px;
+
+      background: var(--warning-soft);
+      color: var(--warning-text);
+
+      font-size: 14px;
+    }
+
+    /* Policy card */
+
+    .terms {
+      padding: 16px 44px 44px;
+
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+
+      background: var(--surface);
+
+      box-shadow: var(--shadow);
+
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+    }
+
+    section {
+      padding: 34px 0;
+
+      border-bottom: 1px solid var(--border);
+
+      scroll-margin-top: 24px;
+    }
+
+    section:last-child {
+      border-bottom: 0;
+      padding-bottom: 6px;
+    }
+
+    h2 {
+      margin: 0 0 15px;
+
+      font-size: 23px;
+      line-height: 1.3;
+
+      letter-spacing: -0.02em;
+    }
+
+    p {
+      margin: 0 0 16px;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    ul {
+      margin: 12px 0 18px;
+      padding-left: 24px;
+    }
+
+    li {
+      margin: 7px 0;
+    }
+
+    /* Important callout */
+
+    .callout {
+      margin: 20px 0;
+
+      padding: 18px 20px;
+
+      border-left: 4px solid var(--accent);
+      border-radius: 6px 14px 14px 6px;
+
+      background: var(--accent-soft);
+    }
+
+    /* Contact */
+
+    .contact {
+      padding: 22px;
+
+      border-radius: 18px;
+
+      background: var(--accent-soft);
+    }
+
+    .contact p {
+      margin: 6px 0;
+    }
+
+    /* Footer */
+
+    footer {
+      padding: 30px 10px 0;
+
+      text-align: center;
+
+      color: var(--muted);
+
+      font-size: 13px;
+    }
+
+    /* Mobile */
+
+    @media (max-width: 640px) {
+      .page {
+        width: min(calc(100% - 22px), var(--content-width));
+        padding: 28px 0 48px;
+      }
+
+      .brand {
+        margin-left: 4px;
+        margin-bottom: 18px;
+      }
+
+      .hero {
+        padding: 30px 24px;
+
+        border-radius: 22px;
+      }
+
+      .terms {
+        padding: 6px 24px 30px;
+
+        border-radius: 20px;
+      }
+
+      section {
+        padding: 28px 0;
+      }
+
+      .intro {
+        font-size: 16px;
+      }
+
+      h2 {
+        font-size: 21px;
+      }
+    }
+
+    /* Dark mode */
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #11131a;
+        --surface: rgba(25, 28, 38, 0.94);
+
+        --text: #f3f4f8;
+        --muted: #a4a9b8;
+
+        --border: #2b2f3c;
+
+        --accent: #9ca8ff;
+        --accent-dark: #bac2ff;
+        --accent-soft: rgba(107, 123, 230, 0.14);
+
+        --warning-soft: rgba(207, 159, 47, 0.10);
+        --warning-border: rgba(220, 175, 73, 0.32);
+        --warning-text: #e5c978;
+
+        --shadow:
+          0 22px 60px rgba(0, 0, 0, 0.25);
+      }
+
+      body {
+        background:
+          radial-gradient(
+            circle at 15% 0%,
+            rgba(87, 104, 219, 0.16),
+            transparent 30rem
+          ),
+          radial-gradient(
+            circle at 90% 20%,
+            rgba(71, 152, 139, 0.08),
+            transparent 25rem
+          ),
+          var(--bg);
+      }
+
+      .hero {
+        border-color: var(--border);
+
+        background:
+          linear-gradient(
+            145deg,
+            rgba(28, 31, 43, 0.98),
+            rgba(21, 24, 33, 0.96)
+          );
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="page">
+
+    <!-- Brand -->
+
+    <a class="brand" href="#" aria-label="Schedora">
+      <span class="brand-icon">S</span>
+      <span>Schedora</span>
+    </a>
+
+
+    <!-- Hero -->
+
+    <header class="hero">
+
+      <div class="eyebrow">
+        Legal
+      </div>
+
+      <h1>Terms of Use</h1>
+
+      <p class="intro">
+        These Terms of Use (“Terms”) are an agreement between you and us.
+        They govern your download, access, and use of Schedora.
+      </p>
+
+      <div class="dates">
+
+        <span>
+          <strong>Effective date:</strong>
+          [MONTH DAY, YEAR]
+        </span>
+
+        <span>
+          <strong>Last updated:</strong>
+          [MONTH DAY, YEAR]
+        </span>
+
+      </div>
+
+    </header>
+
+
+    <!--
+      Remove this notice after replacing
+      all placeholders below.
+    -->
+
+    <div class="notice">
+      Before publishing, replace all legal-name, jurisdiction,
+      contact-information, and date placeholders with your real information.
+    </div>
+
+
+    <!-- Terms -->
+
+    <article class="terms">
+
+
+      <section id="agreement">
+
+        <p>
+          These Terms of Use (“Terms”) are an agreement between you and us.
+          They govern your download, access, and use of Schedora.
+        </p>
+
+        <p>
+          <strong>
+            By using Schedora, you agree to these Terms.
+            If you do not agree, do not use the app.
+          </strong>
+        </p>
+
+      </section>
+
+
+      <section id="apple">
+
+        <h2>1. Relationship With Apple</h2>
+
+        <p>
+          These Terms are between you and
+          <strong>[LEGAL NAME OR BUSINESS NAME]</strong>,
+          not Apple. We, rather than Apple, are responsible for
+          Schedora and its content.
+        </p>
+
+        <p>
+          Your use of Schedora is also subject to Apple's applicable
+          App Store rules and the
+          <a
+            href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Apple Standard Licensed Application End User License Agreement
+          </a>,
+          which is incorporated into these Terms.
+        </p>
+
+        <p>
+          If these Terms conflict with Apple's mandatory usage rules or
+          applicable law, those rules or laws will control to the extent
+          of the conflict.
+        </p>
+
+      </section>
+
+
+      <section id="license">
+
+        <h2>2. License</h2>
+
+        <p>
+          We grant you a limited, personal, non-exclusive,
+          non-transferable, revocable license to use Schedora on
+          Apple-branded devices that you own or control, as permitted
+          by Apple's usage rules.
+        </p>
+
+        <p>
+          Schedora is licensed, not sold. We and our licensors retain
+          all rights not expressly granted to you.
+        </p>
+
+        <p>You may not:</p>
+
+        <ul>
+          <li>
+            Copy, sell, sublicense, redistribute, or commercially exploit
+            the app except where applicable law permits.
+          </li>
+
+          <li>
+            Reverse engineer, disassemble, modify, or attempt to derive
+            the app's source code except where such restrictions are
+            prohibited by law.
+          </li>
+
+          <li>
+            Interfere with the app's operation or security.
+          </li>
+
+          <li>
+            Circumvent evaluation, purchase, subscription, or access controls.
+          </li>
+
+          <li>
+            Use the app for unlawful, harmful, fraudulent, or infringing activity.
+          </li>
+        </ul>
+
+      </section>
+
+
+      <section id="content">
+
+        <h2>3. Your Content and Responsibilities</h2>
+
+        <p>
+          You remain responsible for the schedules, class information,
+          lessons, notes, tasks, and other content you enter into Schedora.
+        </p>
+
+        <p>
+          You must have the right to use that content and must not enter
+          information that violates another person's rights or applicable law.
+        </p>
+
+        <p>You are responsible for:</p>
+
+        <ul>
+          <li>Keeping your device secure.</li>
+          <li>Checking the accuracy of your planner.</li>
+          <li>Keeping any exports or other copies you may require.</li>
+          <li>Protecting files you export or share.</li>
+
+          <li>
+            Avoiding unnecessary student or other sensitive personal information.
+          </li>
+        </ul>
+
+        <div class="callout">
+          A JSON export is readable but is not a restorable backup.
+        </div>
+
+      </section>
+
+
+      <section id="planning-aid">
+
+        <h2>4. Schedora Is a Planning Aid</h2>
+
+        <p>
+          Schedora is a personal planning tool. It is not:
+        </p>
+
+        <ul>
+          <li>An official school calendar.</li>
+          <li>An emergency or closure-notification system.</li>
+          <li>A student information system.</li>
+          <li>A substitute for instructions from your school or employer.</li>
+          <li>A guaranteed source of schedule information.</li>
+        </ul>
+
+        <div class="callout">
+          Always verify important dates, class times, closures,
+          special schedules, and employment obligations with the
+          appropriate school or authority.
+        </div>
+
+        <p>
+          We do not guarantee that information entered into or calculated
+          by Schedora will always be complete, current, or error-free.
+        </p>
+
+      </section>
+
+
+      <section id="evaluation">
+
+        <h2>5. Evaluation Access</h2>
+
+        <p>
+          Eligible users may receive a 30-day full-access evaluation
+          under the conditions displayed in the app.
+        </p>
+
+        <p>
+          The evaluation is provided by Schedora and is separate from
+          any App Store introductory offer unless the purchase screen
+          expressly says otherwise.
+        </p>
+
+        <p>
+          Evaluation eligibility and dates may be recorded locally and
+          may not reset when planner data is erased or the app is reinstalled.
+        </p>
+
+        <p>
+          When the evaluation or paid access ends, Schedora may limit
+          creation and editing while allowing existing planner data to
+          remain viewable in read-only mode.
+        </p>
+
+      </section>
+
+
+      <section id="subscriptions">
+
+        <h2>6. Schedora Pro Subscriptions</h2>
+
+        <p>
+          Schedora may offer monthly and annual auto-renewing subscriptions.
+        </p>
+
+        <p>
+          The price, billing period, and available terms shown on the
+          App Store purchase confirmation screen control your purchase.
+          Payment is charged to the Apple ID associated with your
+          App Store account.
+        </p>
+
+        <p>
+          Subscriptions renew automatically unless you turn off automatic
+          renewal at least 24 hours before the end of the current subscription
+          period.
+        </p>
+
+        <p>
+          You can manage or cancel your subscription through your
+          Apple account's subscription settings.
+        </p>
+
+        <div class="callout">
+          Deleting Schedora, resetting planner data, or stopping use
+          of the app does not cancel an active subscription.
+        </div>
+
+        <p>
+          <strong>Restore Purchases</strong> asks Apple and RevenueCat
+          to refresh eligible purchase status.
+        </p>
+
+        <p>
+          Apple controls billing, cancellations, refunds, and applicable
+          subscription-payment decisions.
+        </p>
+
+      </section>
+
+
+      <section id="third-parties">
+
+        <h2>7. Third-Party Services</h2>
+
+        <p>
+          Schedora uses services provided by Apple and RevenueCat for
+          purchases, billing, subscription offerings, receipt validation,
+          restoration, and entitlement status.
+        </p>
+
+        <p>
+          Your use of those services may be subject to separate terms
+          and privacy policies. You must comply with applicable
+          third-party terms when using Schedora.
+        </p>
+
+        <p>
+          Third-party services may sometimes be unavailable or require
+          an internet connection.
+        </p>
+
+        <p>
+          We are not responsible for failures caused solely by services
+          outside our reasonable control.
+        </p>
+
+      </section>
+
+
+      <section id="ownership">
+
+        <h2>8. Ownership</h2>
+
+        <p>
+          Schedora's software, design, branding, interface,
+          documentation, and original content are owned by
+          <strong>[LEGAL NAME OR BUSINESS NAME]</strong>
+          or its licensors and are protected by applicable
+          intellectual-property laws.
+        </p>
+
+        <p>
+          These Terms do not transfer ownership of Schedora
+          or its intellectual property to you.
+        </p>
+
+      </section>
+
+
+      <section id="support">
+
+        <h2>9. Maintenance and Support</h2>
+
+        <p>
+          We are responsible for providing any maintenance and support
+          for Schedora required by applicable law.
+          Apple has no obligation to provide maintenance or support
+          for the app.
+        </p>
+
+        <p>
+          Support requests can be sent to
+          <a href="mailto:[SUPPORT EMAIL]">
+            [SUPPORT EMAIL]
+          </a>.
+        </p>
+
+      </section>
+
+
+      <section id="availability">
+
+        <h2>10. Availability and Changes</h2>
+
+        <p>
+          We may update, improve, replace, suspend, or discontinue
+          Schedora or individual features.
+        </p>
+
+        <p>
+          Local planning features are designed to work offline.
+          Subscription pricing, purchasing, restoration, and entitlement
+          verification may require internet access and the availability
+          of Apple or RevenueCat services.
+        </p>
+
+        <p>
+          Where required by law, changes affecting an active paid
+          subscription will be handled through the applicable
+          App Store process.
+        </p>
+
+      </section>
+
+
+      <section id="termination">
+
+        <h2>11. Termination</h2>
+
+        <p>
+          You may stop using Schedora at any time.
+        </p>
+
+        <p>
+          We may terminate or restrict your license if you materially
+          violate these Terms, subject to applicable law.
+        </p>
+
+        <p>
+          Termination of your app license and cancellation of an
+          App Store subscription are separate actions.
+        </p>
+
+        <p>
+          Ending a subscription does not automatically delete planner
+          information stored on your device.
+        </p>
+
+      </section>
+
+
+      <section id="disclaimer">
+
+        <h2>12. Disclaimer</h2>
+
+        <p>
+          To the maximum extent permitted by law, Schedora is provided
+          “as is” and “as available.”
+        </p>
+
+        <p>
+          We disclaim warranties of uninterrupted availability, accuracy,
+          merchantability, fitness for a particular purpose,
+          and non-infringement.
+        </p>
+
+        <p>
+          Nothing in these Terms excludes warranties or consumer rights
+          that cannot legally be excluded.
+        </p>
+
+        <p>
+          If Schedora fails to conform to an applicable warranty,
+          you may notify Apple, and Apple may refund the purchase price,
+          if any, as required under its applicable terms.
+        </p>
+
+        <p>
+          To the maximum extent permitted by law, Apple has no other
+          warranty obligation concerning Schedora.
+        </p>
+
+      </section>
+
+
+      <section id="liability">
+
+        <h2>13. Limitation of Liability</h2>
+
+        <p>
+          To the maximum extent permitted by law,
+          <strong>[LEGAL NAME OR BUSINESS NAME]</strong>
+          will not be liable for indirect, incidental, special,
+          consequential, exemplary, or punitive losses arising from:
+        </p>
+
+        <ul>
+          <li>Your use of or inability to use Schedora.</li>
+
+          <li>
+            Missed or incorrect schedule information.
+          </li>
+
+          <li>
+            Device loss or failure.
+          </li>
+
+          <li>
+            Loss of locally stored planner information.
+          </li>
+
+          <li>
+            An export being lost, disclosed, or sent to an
+            unintended destination.
+          </li>
+
+          <li>
+            The unavailability of Apple, RevenueCat,
+            or another third-party service.
+          </li>
+        </ul>
+
+        <p>
+          This limitation does not apply where liability cannot legally
+          be excluded or limited.
+        </p>
+
+      </section>
+
+
+      <section id="compliance">
+
+        <h2>14. Legal Compliance</h2>
+
+        <p>
+          You represent that you are not located in a country subject
+          to a United States government embargo or designated as
+          supporting terrorism, and that you are not listed on a
+          United States government prohibited or restricted-party list.
+        </p>
+
+        <p>
+          You agree to comply with all laws applicable to your use
+          of Schedora.
+        </p>
+
+      </section>
+
+
+      <section id="ip-claims">
+
+        <h2>15. Intellectual-Property Claims</h2>
+
+        <p>
+          If a third party claims that Schedora infringes its
+          intellectual-property rights,
+          <strong>[LEGAL NAME OR BUSINESS NAME]</strong>,
+          not Apple, will be responsible for investigating, defending,
+          settling, or otherwise addressing that claim as required by law.
+        </p>
+
+      </section>
+
+
+      <section id="governing-law">
+
+        <h2>16. Governing Law</h2>
+
+        <p>
+          These Terms are governed by the laws of
+          <strong>[STATE/PROVINCE AND COUNTRY]</strong>,
+          without regard to conflict-of-law rules.
+        </p>
+
+        <p>
+          Nothing in this section deprives you of mandatory consumer
+          rights or the protections of the laws and courts that must
+          apply in your place of residence.
+        </p>
+
+      </section>
+
+
+      <section id="apple-beneficiary">
+
+        <h2>17. Apple as Third-Party Beneficiary</h2>
+
+        <p>
+          Apple and its subsidiaries are third-party beneficiaries
+          of these Terms.
+        </p>
+
+        <p>
+          After you accept these Terms, Apple has the right to enforce
+          the applicable provisions against you as a third-party beneficiary.
+        </p>
+
+      </section>
+
+
+      <section id="changes">
+
+        <h2>18. Changes to These Terms</h2>
+
+        <p>
+          We may update these Terms as Schedora changes.
+        </p>
+
+        <p>
+          We will revise the “Last updated” date and provide any notice
+          required by law.
+        </p>
+
+        <p>
+          Continued use after updated Terms take effect constitutes
+          acceptance only to the extent permitted by applicable law.
+        </p>
+
+      </section>
+
+
+      <section id="contact">
+
+        <h2>19. Contact</h2>
+
+        <p>
+          Questions, complaints, or claims concerning Schedora
+          should be directed to:
+        </p>
+
+        <div class="contact">
+
+          <p>
+            <strong>Telephone:</strong>
+            <a href="tel:[TELEPHONE NUMBER]">
+              [TELEPHONE NUMBER]
+            </a>
+          </p>
+
+          <p>
+            <strong>Email:</strong>
+            <a href="mailto:[SUPPORT EMAIL]">
+              [SUPPORT EMAIL]
+            </a>
+          </p>
+
+        </div>
+
+      </section>
+
+
+    </article>
+
+
+    <footer>
+      &copy;
+      <span id="year"></span>
+      Schedora. All rights reserved.
+    </footer>
+
+  </main>
+
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+
+</body>
+</html>
